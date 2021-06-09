@@ -12,5 +12,9 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": { "no-unused-vars": "warn", "react/prop-types": "off" }
+  "rules": {
+    "no-unused-vars": "warn",
+    "react/prop-types": "off",
+    "no-undef": "off"
+  }
 }

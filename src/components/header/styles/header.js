@@ -4,10 +4,9 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  ${({ src }) =>
-    src
-      ? `background: url('../images/misc/${src}.jpg') top left / cover no-repeat;`
-      : `background: url('../images/misc/home-bg.jpg') top left / cover no-repeat;`}
+  background: url(${({ src }) =>
+      src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'})
+    top left / cover no-repeat;
 `;
 // background: url(${({ src }) =>
 // src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'})
