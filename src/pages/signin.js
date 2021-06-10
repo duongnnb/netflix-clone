@@ -17,7 +17,6 @@ export default function Signin() {
 
   const handleSignin = (event) => {
     event.preventDefault();
-    console.log('in');
 
     firebase
       .auth()
