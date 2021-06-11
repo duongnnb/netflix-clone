@@ -6,8 +6,7 @@ import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
 import { useAuthListener } from './hooks';
 
 export default function App() {
-  const user = useAuthListener();
-  // console.log('user', user);
+  const { user } = useAuthListener();
 
   return (
     <Router>
