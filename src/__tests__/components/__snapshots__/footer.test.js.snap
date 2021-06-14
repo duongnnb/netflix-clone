@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders the <Footer /> with populated data 1`] = `
+<div
+  class="sc-bdnxRM cPqBBX"
+>
+  <p
+    class="sc-eCApnc ktdPsL"
+  >
+    Question?
+  </p>
+  <p
+    class="sc-gKAaRy kmMFLK"
+  />
+  <div
+    class="sc-dlnjwi laRSnL"
+  >
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        FAQ
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Investor Relations
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Privacy
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Speed Test
+      </a>
+    </div>
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Help Centre
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Jobs
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Cookie Preferences
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Legal Notices
+      </a>
+    </div>
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Account
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Ways to Watch
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Corporate Information
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Netflix Originals
+      </a>
+    </div>
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Media Center
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Terms of Use
+      </a>
+      <a
+        class="sc-hKFxyN huptAL"
+        href="#"
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+  <p
+    class="sc-gKAaRy kmMFLK"
+  />
+  <p
+    class="sc-jSFjdj kVdVHv"
+  >
+    Netflix Vietnam
+  </p>
+</div>
+`;
