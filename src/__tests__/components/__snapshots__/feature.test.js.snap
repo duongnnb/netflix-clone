@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Feature /> renders the <Feature /> with popupated data 1`] = `
+<div
+  class="sc-fnVZcZ kGPWW"
+>
+  <h1
+    class="sc-fFSPTT bjerTp"
+  >
+    Unlimited movies, TV shows and more.
+  </h1>
+  <h2
+    class="sc-bkbkJK iDBAyO"
+  >
+    Watch anywhere. Cancel at any time.
+  </h2>
+</div>
+`;
+
+exports[`<Feature/> renders the <Feature /> with just a subtitle 1`] = `
+<div
+  class="sc-fnVZcZ kGPWW"
+>
+  <h2
+    class="sc-bkbkJK iDBAyO"
+  >
+    Watch anywhere. Cancel at any time.
+  </h2>
+</div>
+`;
+
+exports[`<Feature/> renders the <Feature /> with just a title 1`] = `
+<div
+  class="sc-fnVZcZ kGPWW"
+>
+  <h1
+    class="sc-fFSPTT bjerTp"
+  >
+    Unlimited movies, TV shows and more.
+  </h1>
+</div>
+`;
+
+exports[`<Feature/> renders the <Feature /> with populated data 1`] = `
+<div
+  class="sc-fnVZcZ kGPWW"
+>
+  <h1
+    class="sc-fFSPTT bjerTp"
+  >
+    Unlimited movies, TV shows and more.
+  </h1>
+  <h2
+    class="sc-bkbkJK iDBAyO"
+  >
+    Watch anywhere. Cancel at any time.
+  </h2>
+</div>
+`;
+
+exports[`<Feature/> renders the <Feature /> with popupated data 1`] = `
+<div
+  class="sc-fnVZcZ kGPWW"
+>
+  <h1
+    class="sc-fFSPTT bjerTp"
+  >
+    Unlimited movies, TV shows and more.
+  </h1>
+  <h2
+    class="sc-bkbkJK iDBAyO"
+  >
+    Watch anywhere. Cancel at any time.
+  </h2>
+</div>
+`;
+
+exports[`something renders the <Feature /> with popupated data 1`] = `
+<div
+  class="sc-fnVZcZ kGPWW"
+>
+  <h1
+    class="sc-fFSPTT bjerTp"
+  >
+    Unlimited movies, TV shows and more.
+  </h1>
+  <h2
+    class="sc-bkbkJK iDBAyO"
+  >
+    Watch anywhere. Cancel at any time.
+  </h2>
+</div>
+`;
