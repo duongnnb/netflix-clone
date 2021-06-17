@@ -7,11 +7,26 @@ jest.mock('react-router-dom');
 describe('<Header />', () => {
   it('renders the basic <Header /> with a background', () => {
     const { container, getByText, getByTestId, queryByTestId } = render(
+      <Header>
+        <Header.Frame>
+          <Header.Logo alt='Netflix' src='/logo.svg' />
+          <Header.TextLink active='true'>Hello I am a link!</Header.TextLink>
+        </Header.Frame>
+      </Header>
+    );
+
+    expect(getByText('Hello I am a link!')).toBeTruthy();
+    expect(queryByTestId('header-bg')).toBeTruthy();
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('renders the basic <Header /> without a background', () => {
+    const { container, getByText, queryByTestId } = render(
       <Header bg={false}>
         <Header.Frame>
-          <Header.Logo to='/' alt='Netflix' src='/logo.svg' />
-          <Header.TextLink active='true'>Hello I am a link!</Header.TextLink>
-          <Header.ButtonLink to='/'>Sign In</Header.ButtonLink>
+          <Header.Logo src='/logo.svg' alt='Netflix' />
+          <Header.ButtonLink>Sign In</Header.ButtonLink>
+          <Header.TextLink active={false}>Hello I am a link!</Header.TextLink>
         </Header.Frame>
       </Header>
     );
@@ -41,7 +56,7 @@ describe('<Header />', () => {
               <Header.Dropdown>
                 <Header.Group>
                   <Header.Picture src='/images/karl.png' />
-                  {/* <Header.TextLink>Karl Hadwen</Header.TextLink> */}
+                  <Header.TextLink>Anonymous</Header.TextLink>
                 </Header.Group>
                 <Header.Group>
                   <Header.TextLink onClick={() => {}}>Sign out</Header.TextLink>
@@ -60,15 +75,14 @@ describe('<Header />', () => {
 
     expect(getByTestId('search-input')).toBeTruthy();
     expect(getByTestId('search-input').value).toBe('Joker');
-    fireEvent.change(
-      getByTestId('search-input', {
-        target: { value: 'Simpsons' },
-      })
-    );
+    fireEvent.change(getByTestId('search-input'), {
+      target: { value: 'Simpsons' },
+    });
     fireEvent.click(getByTestId('search-click'));
+
     expect(getByText('Series')).toBeTruthy();
     expect(getByText('Films')).toBeTruthy();
-    // expect(getByText('Karl Hadwen')).toBeTruthy();
+    expect(getByText('Anonymous')).toBeTruthy();
     expect(getByText('Watch Joker Now')).toBeTruthy();
     expect(getByText('Sign out')).toBeTruthy();
     expect(getByText('Forever alone in a crowd...')).toBeTruthy();

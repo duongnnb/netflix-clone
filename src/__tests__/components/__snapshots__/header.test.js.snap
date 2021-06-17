@@ -2,10 +2,27 @@
 
 exports[`<Header /> renders the basic <Header /> with a background 1`] = `
 <div
+  class="header__Background-t8lkk2-0 fXYckb"
+  data-testid="header-bg"
+>
+  <div
+    class="header__Container-t8lkk2-2 dgnQxw"
+  >
+    <p
+      class="header__Link-t8lkk2-4 jeHOV"
+    >
+      Hello I am a link!
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<Header /> renders the basic <Header /> without a background 1`] = `
+<div
   class="header__Container-t8lkk2-2 dgnQxw"
 >
   <p
-    class="header__Link-t8lkk2-4 jeHOV"
+    class="header__Link-t8lkk2-4 dnJggJ"
   >
     Hello I am a link!
   </p>
@@ -74,6 +91,11 @@ exports[`<Header /> renders the full <Header /> with a background 1`] = `
               class="header__Picture-t8lkk2-3 cJrRBH"
               src="/images/users//images/karl.png.png"
             />
+            <p
+              class="header__Link-t8lkk2-4 dnJggJ"
+            >
+              Anonymous
+            </p>
           </div>
           <div
             class="header__Group-t8lkk2-1 coSjYi"
