@@ -27,16 +27,7 @@ test('selection Filter with legitimate data', () => {
       slug: 'the-prestige',
     },
   ];
-
   const slides = selectionFilter({ series, films });
-  expect(slides.series[0].title).toBe('Documentaries');
-  expect(slides.series[0].data[0].description).toBe(
-    'An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.'
-  );
-  expect(slides.series[0].data[0].genre).toBe('documentaries');
-  expect(slides.series[0].data[0].maturity).toBe('18');
-  expect(slides.series[0].data[0].slug).toBe('tiger-king');
-
   expect(slides.films[0].title).toBe('Drama');
   expect(slides.films[0].data[0].description).toBe('Great film...');
   expect(slides.films[0].data[0].genre).toBe('drama');
@@ -49,5 +40,5 @@ test('selectionFilter with no data', () => {
   expect(slides.series[0].title).toBe('Documentaries');
   expect(slides.films[0].title).toBe('Drama');
   expect(slides.series[0].data).toBe(undefined);
-  expect(slides.series[0].data).toBe(undefined);
+  expect(slides.films[0].data).toBe(undefined);
 });
